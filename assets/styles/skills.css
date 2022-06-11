@@ -1,0 +1,47 @@
+.skills {
+	width: 100%;
+	color: #fff;
+	padding: 150px 0;
+	font-size: 2rem;
+	background-color: #308a73;
+	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+	box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+.skills__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 30px auto;
+}
+
+.skill__card {
+	background-color: #246756;
+	border-radius: 10px;
+	box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	transition: .5s;
+	margin: 20px 10px;
+}
+
+.skill__card:hover {
+	transform: translateY(-10px);
+	box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+progress {
+	width: 200px;
+	border: 2px solid #308a73;
+	border-radius: 7px;
+	height: 22px;
+}
+
+progress::-webkit-progress-bar {
+	background-color: #308a73;
+	border-radius: 7px;
+}
+
+progress::-webkit-progress-value {
+	background-color: #246756;
+	border-radius: 7px;
+}

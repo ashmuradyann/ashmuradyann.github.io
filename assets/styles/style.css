@@ -1,0 +1,203 @@
+@import 'header.css';
+@import 'about.css';
+@import 'portfolio.css';
+@import 'skills.css';
+@import 'contact.css';
+@import 'scrolled.css';
+
+@font-face {
+	font-family: "Lobster";
+	font-style: normal;
+    font-weight: normal;
+	src: url("../fonts/Lobster.woff");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lobster", cursive;
+	font-weight: 550;
+	user-select: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #246756;
+}
+
+#progress {
+	height: 5px;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	z-index: 2;
+	box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+header, .arrow__wrapper, .arrow__down, .about, .about__container, .avatar__wrapper, .links__wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio__container, .skills__container, .contact__container {
+	width: 80%;
+	margin: auto;
+}
+
+@media (min-width: 1725px){
+
+	.welcome__wrapper {
+		font-size: 120px;
+		transform: translateY(120px);
+	}
+
+	.arrow__wrapper {
+		font-size: 30px;
+	}
+
+	.arrow__down {
+		width: 80px;
+		height: 50px;
+		border-radius: 10px;
+		border: 3px solid #fff;
+	}
+
+	.about {
+		padding: 20% 0;
+		box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.3);
+	}
+
+	.avatar__frame {
+		width: 40rem;
+		height: 40rem;
+		border-radius: 50%;
+		overflow: hidden;
+		box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.3);
+	}
+
+	.avatar__wrapper:hover {
+		transform: translateY(-30px);
+	}
+
+
+	img {
+		width: 40rem
+	}
+
+	.about__text {
+		font-size: 2.5rem;
+	}
+
+	.portfolio {
+		padding: 150px 0;
+		font-size: 3rem;
+	}
+
+	.portfolio__card {
+		width: 440px;
+	}
+
+	.skills {
+		padding: 150px 0;
+		font-size: 3rem;
+	}
+
+	.skills__wrapper {
+		margin: 30px auto;
+	}
+
+	.skill__card {
+		border-radius: 15px;
+		padding: 40px;
+		margin: 20px 10px;
+	}
+
+	.skill__card:hover {
+		transform: translateY(-10px);
+		box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
+	}
+
+	progress {
+		width: 300px;
+	}
+
+	.contact {
+		margin-bottom: 250px auto;
+		padding: 200px 200px;
+	}
+
+}
+
+@media (max-width: 1650px) {
+
+	.contact {
+		margin-bottom: 200px auto;
+	}
+
+}
+
+@media (max-width: 1575px) {
+	.portfolio__card {
+		width: 350px;
+		padding: 20px; 
+	}
+}
+
+@media (max-width: 1400px) {
+	.portfolio__card {
+		width: 320px;
+	}
+}
+
+@media (max-width: 1305px) {
+
+	.about__container {
+		display: block;
+	}
+
+	.avatar__wrapper, .about__text {
+		width: 100%;
+	}
+
+	.about__text {
+		margin-top: 40px;
+	}
+
+	.portfolio__card {
+		width: 400px;
+	}
+
+}
+
+@media (max-width: 1060px) {
+	.portfolio__card {
+		width: 350px; 
+	}
+}
+
+@media (max-width: 920px) {
+
+	.arrow__wrapper {
+		font-size: 70px;
+	}
+
+	.arrow__down {
+		width: 100px;
+		height: 70px;
+		border: 3px solid #fff;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	.about__text {
+		font-size: 3rem;
+	}
+
+}
