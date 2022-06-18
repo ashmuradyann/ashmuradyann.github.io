@@ -49,6 +49,26 @@ header, .arrow__wrapper, .arrow__down, .about, .about__container, .avatar__wrapp
 	margin: auto;
 }
 
+::-webkit-scrollbar {
+	width: 5px;
+	border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #fff; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(211, 211, 211); 
+}
+
 @media (min-width: 1725px){
 
 	.welcome__wrapper {
