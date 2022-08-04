@@ -10,8 +10,8 @@ var typed = new Typed('#welcome',
 	{
 		strings: [
 			"Hi !",
-			"Hi^1000, I am Ashot Muradyan^2000",
-			"I am a Frontend Developer^2000", 
+			"Hi^1000, I am Ashot Muradyan^1500",
+			"I am a Frontend Developer^1500", 
 			"So..^500 Let's Dive In !"],
 		typeSpeed: 50,
 		backSpeed: 35,

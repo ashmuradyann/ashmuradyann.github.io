@@ -29,6 +29,61 @@
 	box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
+.js:hover {
+	color: #000;
+	background-color: #f0d81e;
+}
+
+.react:hover {
+	color: #61d2f2;
+	background-color: #2a2b2d;
+}
+
+.html:hover {
+	color: #fff;
+	background-color: #f85421;
+}
+
+.css:hover {
+	color: #fff;
+	background-color: #0091d4;
+}
+
+.scss:hover {
+	color: #c76493;
+	background-color: #f7f7f7;
+}
+
+.styled:hover {
+	color: #f8cb4f;
+	background-color: #a8578b;
+}
+
+.stylingLibs:hover {
+	color: #fff;
+	background-color: #0080ff;
+}
+
+.npm:hover {
+	color: #fff;
+	background-color: #c63635;
+}
+
+.git:hover {
+	color: #e84e32;
+	background-color: #323232;
+}
+
+.api:hover {
+	color: #fff;
+	background-color: #151515;
+}
+
+.json:hover {
+	color: #fff;
+	background-color: #151515;
+}
+
 progress {
 	width: 200px;
 	border: 2px solid #308a73;
