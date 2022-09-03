@@ -29,6 +29,26 @@
 	box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
+.stylingLibs {
+	position: relative;
+	z-index: 1;
+}
+
+.stylingLibs::after {
+	position: absolute;
+	top: 110%;
+	left: -4%;
+	content: "Material UI, ANTD";
+	width: 100%;
+	border-radius: 10px;
+	padding: 10px;
+	height: fit-content;
+	background-color: #0080ff;
+	pointer-events: none;
+	opacity: 0;
+	transition: .5s;
+}
+
 .js:hover {
 	color: #000;
 	background-color: #f0d81e;
@@ -64,9 +84,18 @@
 	background-color: #0080ff;
 }
 
+.stylingLibs:hover.stylingLibs::after {
+	opacity: 1;
+}
+
 .npm:hover {
 	color: #fff;
 	background-color: #c63635;
+}
+
+.pnpm:hover {
+	color: #4c4c4c;
+	background-color: #f9ad01;
 }
 
 .git:hover {
