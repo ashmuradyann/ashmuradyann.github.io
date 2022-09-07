@@ -10,6 +10,18 @@
 	position: relative;
 }
 
+.copy__icon {
+	font-size: 2rem;
+	margin-left: -15px;
+	opacity: 0;
+	transition: .2s;
+	text-decoration: none !important;
+}
+
+.copy__icon:hover {
+	transform: translateY(-10px)
+}
+
 .contact__title::after {
 	content: 'wanna listen your suggestions';
 	font-size: 1.2rem;
@@ -34,7 +46,21 @@
 	margin: 20px 30px;
 }
 
-.links__wrapper a:hover {
+.mail {
+	transition: .5s;
+}
+
+.mail:hover:not(.copy__icon) {
+	transform: translateY(-10px);
+	text-decoration: underline;
+}
+
+.mail:hover .copy__icon {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.links__wrapper a:not(.mail__mail):hover {
 	text-decoration: underline;
 	transform: translateY(-10px);
 }
