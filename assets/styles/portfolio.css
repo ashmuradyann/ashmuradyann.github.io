@@ -5,6 +5,20 @@
 	font-size: 2rem;
 }
 
+.portfolio__title {
+	width: fit-content;
+	position: relative;
+}
+
+
+.portfolio__title::after {
+	content: 'made with love';
+	font-size: 1.2rem;
+	position: absolute;
+	top: 75%;
+	left: 68%;
+}
+
 .cards__wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -28,16 +42,33 @@
 .portfolio__card::after {
 	content: attr(data-skill);
 	position: absolute;
-	width: 200px;
+	width: 120px;
+	border-radius: 5px;
 	top: 8%;
-	left: 67%;
+	left: 76%;
 	font-size: 1rem;
 	background-color: #2a2b2d;
 	color: #61d2f2;
-	padding: 2px 0;
 	transform: rotate(40deg);
+	padding: 2px 0;
 	display: flex;
 	justify-content: center;
+	transition: .2s;
+	z-index: 9999999;
+}
+
+.portfolio__card:hover.portfolio__card {
+	overflow: visible;
+}
+
+.portfolio__card:hover::after {
+	border-radius: 10px;
+	min-width: 100px;
+	transform: rotate(0deg);
+	font-size: 1.5rem;
+	padding: 10px 0;
+	top: -10%;
+	left: 72%;
 }
 
 .portfolio__card:nth-child(2)::after {

@@ -5,6 +5,19 @@
 	font-size: 2rem;
 }
 
+.contact__title {
+	width: fit-content;
+	position: relative;
+}
+
+.contact__title::after {
+	content: 'wanna listen your suggestions';
+	font-size: 1.2rem;
+	position: absolute;
+	top: 77%;
+	left: 37%;
+}
+
 .links__wrapper {
 	display: flex;
 	flex-wrap: wrap;
