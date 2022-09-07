@@ -15,6 +15,19 @@
 	margin: 30px auto;
 }
 
+.skills__title {
+	width: fit-content;
+	position: relative;
+}
+
+.skills__title::after {
+	content: "hover them";
+	font-size: 1.2rem;
+	position: absolute;
+	top: 80%;
+	left: 40%;
+}
+
 .skill__card {
 	background-color: #246756;
 	border-radius: 10px;
@@ -43,7 +56,7 @@
 	border-radius: 10px;
 	padding: 10px;
 	height: fit-content;
-	background-color: #0080ff;
+	background-color: #246756;
 	pointer-events: none;
 	opacity: 0;
 	transition: .5s;
@@ -57,6 +70,11 @@
 .react:hover {
 	color: #61d2f2;
 	background-color: #2a2b2d;
+}
+
+.redux:hover {
+	color: #7248b6;
+	background-color: #f7f7f7;
 }
 
 .html:hover {

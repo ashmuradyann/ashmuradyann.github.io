@@ -18,7 +18,10 @@
 	box-sizing: border-box;
 	font-family: "Lobster", cursive;
 	font-weight: 550;
-	user-select: none;
+}
+
+*::selection {
+	background-color: #cfcfcf4b;
 }
 
 html {
