@@ -46,13 +46,13 @@
 	margin: 20px 30px;
 }
 
-.mail {
-	transition: .5s;
-}
-
-.mail:hover:not(.copy__icon) {
+.mail:hover {
 	transform: translateY(-10px);
 	text-decoration: underline;
+}
+
+.copy__icon {
+	margin: 10px 0 0 10px;
 }
 
 .mail:hover .copy__icon {
@@ -60,7 +60,7 @@
 	cursor: pointer;
 }
 
-.links__wrapper a:not(.mail__mail):hover {
+.links__wrapper a:hover {
 	text-decoration: underline;
 	transform: translateY(-10px);
 }

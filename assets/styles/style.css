@@ -24,12 +24,17 @@
 	background-color: #cfcfcf4b;
 }
 
+a {
+	color: #fff;
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 body {
 	background: #246756;
+	text-shadow: 2px 2px 8px rgba(0,0,0,0.31);
 }
 
 #progress {

@@ -69,6 +69,7 @@
 	padding: 10px 0;
 	top: -10%;
 	left: 72%;
+	text-shadow: none;
 }
 
 .portfolio__card:nth-child(2)::after {

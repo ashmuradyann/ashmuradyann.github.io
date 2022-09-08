@@ -44,6 +44,23 @@
 	align-items: center;
 }
 
-.about__text > p {
-	width: 100%;
+p {
+	width: fit-content;
+}
+
+.download {
+	text-decoration: none;
+	transition: .5s;
+	transform: translateY(0px);
+	position: absolute;
+}
+
+.download > i {
+	margin: 20px 10px 0 0;
+	font-size: 2.5rem;
+}
+
+.download:hover {
+	text-decoration: underline;
+	transform: translateY(-10px);
 }
