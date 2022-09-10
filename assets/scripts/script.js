@@ -1,3 +1,7 @@
+const scrollElements = document.querySelectorAll(".js-scroll");
+const downloadButtonsWrapper = document.querySelector(".download__resume")
+const message = document.querySelector(".message")
+
 window.onscroll = () => {
  	var elementScroll = document.documentElement.scrollTop;
 	var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -24,8 +28,6 @@ var typed = new Typed('#welcome',
 			welcome.style.transform = "translateY(0px)"
 		}
 })
-
-const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
@@ -65,3 +67,26 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
 });
+
+
+const showWrapper = () => {
+	downloadButtonsWrapper.style.opacity = 1
+	downloadButtonsWrapper.style.zIndex = 999
+	downloadButtonsWrapper.style.pointerEvents = "auto"
+}
+
+downloadButtonsWrapper.onclick = () => {
+	downloadButtonsWrapper.style.opacity = 0
+	downloadButtonsWrapper.style.zIndex = 0
+	downloadButtonsWrapper.style.pointerEvents = "none"
+}
+
+const copy = () => {
+	navigator.clipboard.writeText('ashot.muradyan16@gmail.com')
+	message.style.transition = ".5s"
+	message.style.opacity = 1
+	setTimeout(() => {
+		message.style.opacity = 0
+		message.style.transition = "1s"
+	}, 4000)
+}

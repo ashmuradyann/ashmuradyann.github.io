@@ -12,8 +12,8 @@
 
 .copy__icon {
 	font-size: 2rem;
-	margin-left: -15px;
 	opacity: 0;
+	margin-right: -15px;
 	transition: .2s;
 	text-decoration: none !important;
 }
@@ -39,11 +39,22 @@
 	font-size: 3rem;
 }
 
-.links__wrapper a {
+.links__wrapper a:not(.mail__mail) {
 	text-decoration: none;
 	color: #fff;
-	transition: 0.5s;
+	transition: .5s;
 	margin: 20px 30px;
+}
+
+.mail a {
+	text-decoration: none;
+	margin: 20px 15px 20px 30px;
+}
+
+.mail {
+	display: flex;
+	justify-content: center;
+	transition: .5s;
 }
 
 .mail:hover {
@@ -51,16 +62,12 @@
 	text-decoration: underline;
 }
 
-.copy__icon {
-	margin: 10px 0 0 10px;
-}
-
 .mail:hover .copy__icon {
 	opacity: 1;
 	cursor: pointer;
 }
 
-.links__wrapper a:hover {
+.links__wrapper a:not(.mail__mail):hover {
 	text-decoration: underline;
 	transform: translateY(-10px);
 }

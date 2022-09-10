@@ -49,10 +49,10 @@ p {
 }
 
 .download {
-	text-decoration: none;
+	width: fit-content;
 	transition: .5s;
 	transform: translateY(0px);
-	position: absolute;
+	cursor: pointer;
 }
 
 .download > i {
