@@ -10,6 +10,39 @@
 	position: relative;
 }
 
+.like__wrapper {
+	padding: 40px 100px 20px 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.like__title {
+	width: fit-content;
+	position: relative;
+}
+
+.like__title::after {
+	content: attr(data-title);
+	font-size: 1.2rem;
+	position: absolute;
+	top: 77%;
+	left: 80%;
+}
+
+.like__btns > img {
+	cursor: pointer;
+}
+
+.like__count {
+	font-size: 3rem;
+	margin: 0 40px 7px 0;
+}
+
+.contact__container {
+	margin-top: 20px !important;
+}
+
 .copy__icon {
 	font-size: 2rem;
 	opacity: 0;

@@ -47,7 +47,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	backdrop-filter: blur(5px);
-	transition: .2s;
+	transition: .5s;
 	opacity: 0;
 	z-index: 0;
 	pointer-events: none;
@@ -101,7 +101,7 @@ header, .arrow__wrapper, .arrow__down, .about, .about__container, .avatar__wrapp
 	align-items: center;
 }
 
-.portfolio__container, .skills__container, .contact__container {
+.portfolio__container, .skills__container, .like__container, .contact__container {
 	width: 80%;
 	margin: auto;
 }
