@@ -97,43 +97,28 @@ const copy = () => {
 let count
 let KEY = "$2b$10$.cM.jejY.OkO4SvcEUU.F.WaQuAl8SF3ewJoAOZKb6ZO.3ChhgjVW"
 
-const like = async () => {
-	localStorage.setItem("liked", localStorage.getItem("liked") == undefined ? false : localStorage.getItem("liked"))
+const like = async (state) => {
 
-	if (localStorage.getItem("liked") === "false") {
-		console.log("Liked", count)
-		localStorage.setItem("liked", true)
-		likeBtns.innerHTML = "<img src='https://img.icons8.com/material-rounded/50/ffffff/facebook-like--v1.svg' onclick='like()' />"
-		likeTitleWrapper.innerHTML = `<h2 class="like__title" data-title="already liked">Like my portfolio site</h2>`
-
-		await fetch("https://api.jsonbin.io/v3/b/631df3ec5c146d63ca979518", {
-			method: 'PUT',
-			headers: {
-				"Content-Type": "application/json",
-				"X-Master-Key": KEY
-			},
-			body: JSON.stringify({"count": count + 1})
-		}).then(res => res.json()).then(res => console.log(res))
-	} else {
-		console.log("Disliked", count)
-		localStorage.setItem("liked", false)
-		likeBtns.innerHTML = "<img src='https://img.icons8.com/material-outlined/50/ffffff/facebook-like--v1.svg' onclick='like()' />"
-		likeTitleWrapper.innerHTML = `<h2 class="like__title" data-title="sure, like!">Like my portfolio site</h2>`
-		
-		await fetch("https://api.jsonbin.io/v3/b/631df3ec5c146d63ca979518", {
-				method: 'PUT',
-				headers: {
-					"Content-Type": "application/json",
-					"X-Master-Key": KEY
-				},
-				body: JSON.stringify({"count": count - 1})
-			}).then(res => res.json()).then(res => console.log(res))
-	}
+	localStorage.setItem("liked", state)
+	likeBtns.innerHTML = `<img src='https://img.icons8.com/material-${state ? 'rounded' : 'outlined'}/50/ffffff/facebook-like--v1.svg' onclick='like(${state ? false : true})' />`
+	likeTitleWrapper.innerHTML = `<h2 class="like__title" data-title="${state ? 'already liked' : 'sure, like!'}">Like my portfolio site</h2>`
+	// likeCount.innerHTML = state ? count + 1 + " likes" : count == undefined ? count - 1 : count + " likes"
+	
+	await fetch("https://api.jsonbin.io/v3/b/631df3ec5c146d63ca979518", {
+		method: 'PUT',
+		headers: {
+			"Content-Type": "application/json",
+			"X-Master-Key": KEY
+		},
+		body: JSON.stringify({ "count": state ? count + 1 : count - 1 })
+	}).then(res => res.json()).then(res => console.log(res))
 }
 
 likeTitleWrapper.innerHTML = `<h2 class="like__title" data-title="${localStorage.getItem("liked") === "false" ? 'sure, like!' : 'already liked'}">Like my portfolio site</h2>`
 
 window.addEventListener("load", async () => {
+	localStorage.setItem("liked", localStorage.getItem("liked") == null ? false : localStorage.getItem("liked"))
+	console.log(localStorage.getItem("liked"))
 	const headers = {
 		"X-Master-Key": KEY
 	}
@@ -141,11 +126,12 @@ window.addEventListener("load", async () => {
 		.then(res => res.json()).then(res => {
 			count = res.record.count
 		})
+
 	likeCount.innerHTML = count + " likes"
-	console.log(localStorage.getItem("liked"))
-	if (localStorage.getItem("liked") === "false") {
-		likeBtns.innerHTML = "<img src='https://img.icons8.com/material-outlined/50/ffffff/facebook-like--v1.svg' onclick='like()' />"
+	
+	if (localStorage.getItem("liked") === "true") {
+		likeBtns.innerHTML = "<img src='https://img.icons8.com/material-rounded/50/ffffff/facebook-like--v1.svg' onclick='like(false)' />"
 	} else {
-		likeBtns.innerHTML = "<img src='https://img.icons8.com/material-rounded/50/ffffff/facebook-like--v1.svg' onclick='like()' />"
+		likeBtns.innerHTML = "<img src='https://img.icons8.com/material-outlined/50/ffffff/facebook-like--v1.svg' onclick='like(true)' />"
 	}
 })
