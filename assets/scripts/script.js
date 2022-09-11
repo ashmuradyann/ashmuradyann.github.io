@@ -98,6 +98,8 @@ let count
 let KEY = "$2b$10$.cM.jejY.OkO4SvcEUU.F.WaQuAl8SF3ewJoAOZKb6ZO.3ChhgjVW"
 
 const like = async () => {
+	localStorage.setItem("liked", localStorage.getItem("liked") == undefined ? false : localStorage.getItem("liked"))
+
 	if (localStorage.getItem("liked") === "false") {
 		console.log("Liked", count)
 		localStorage.setItem("liked", true)
