@@ -1,7 +1,7 @@
 .portfolio {
 	width: 100%;
 	color: #fff;
-	padding: 50px 0;
+	padding: 50px 0px;
 	font-size: 2rem;
 }
 
@@ -9,7 +9,6 @@
 	width: fit-content;
 	position: relative;
 }
-
 
 .portfolio__title::after {
 	content: 'made with love';

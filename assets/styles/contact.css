@@ -30,13 +30,19 @@
 	left: 80%;
 }
 
-.like__btns > img {
+.like__btn {
 	cursor: pointer;
+	margin-left: 30px;
+	font-size: 2.5rem;
 }
 
 .like__count {
 	font-size: 3rem;
-	margin: 0 40px 7px 0;
+}
+
+.visited__count {
+	font-size: 3rem;
+	margin-left: 30px;
 }
 
 .contact__container {
@@ -68,7 +74,7 @@
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 50px 100px;
+	padding: 50px 70px;
 	font-size: 3rem;
 }
 
@@ -103,4 +109,197 @@
 .links__wrapper a:not(.mail__mail):hover {
 	text-decoration: underline;
 	transform: translateY(-10px);
+}
+
+@media (max-width: 1100px) {
+	.contact {
+		padding: 60px 0;
+		font-size: 2rem;
+	}
+	
+	.like__wrapper {
+		padding: 40px 70px 20px 70px;
+	}
+	
+	.like__count {
+		font-size: 3rem;
+	}
+	
+	.visited__count {
+		font-size: 3rem;
+	}
+	
+	.links__wrapper {
+		padding: 50px 20px;
+		font-size: 3rem;
+	}
+
+	.copy__icon {
+		margin-right: -20px;
+	}
+}
+
+@media (max-width: 991px) {
+	.contact {
+		padding: 40px 0;
+		font-size: 2rem;
+	}
+
+	.like__btn {
+		margin: 7px 0 0 25px;
+		font-size: 1.7rem;
+	}
+	
+	.like__wrapper {
+		padding: 40px 30px 20px 30px;
+	}
+	
+	.like__count {
+		font-size: 2rem;
+	}
+	
+	.visited__count {
+		font-size: 2rem;
+	}
+	
+	.links__wrapper {
+		padding: 50px 0px;
+		font-size: 2rem;
+	}
+
+	.copy__icon {
+		opacity: 1;
+		font-size: 1.6rem !important;
+		margin-right: -20px;
+	}
+}
+
+@media (max-width: 570px) {
+
+	.contact {
+		font-size: 1.7rem;
+	}
+	
+	.like__title {
+		font-size: 1.7rem;
+	}
+
+	.like__btn {
+		margin: 7px 0 0 25px;
+		font-size: 1.4rem;
+	}
+	
+	.like__title::after {
+		content: attr(data-title);
+		font-size: 1rem;
+		position: absolute;
+		top: 77%;
+		left: 80%;
+	}
+
+	.like__wrapper {
+		padding: 40px 20px 20px 20px;
+	}
+	
+	.like__count {
+		font-size: 1.3rem;
+	}
+	
+	.visited__count {
+		font-size: 1.3rem;
+	}
+	
+	.links__wrapper {
+		padding: 50px 0px;
+		font-size: 1.5rem;
+	}
+
+	.links__wrapper a:not(.mail__mail) {
+		margin: 20px 10px;
+	}
+	
+	.mail a {
+		margin: 20px 10px 20px 10px;
+	}
+
+	.copy__icon {
+		opacity: 1;
+		font-size: 1rem !important;
+		margin-right: -20px;
+	}
+}
+
+@media (max-width: 410px) {
+	
+	.like__title::after {
+		font-size: 1rem;
+		top: 77%;
+		left: 80%;
+	}
+
+	.like__btn {
+		margin: 7px 0 0 25px;
+		font-size: 1.3rem;
+	}
+
+	.like__wrapper {
+		padding: 40px 20px 20px 20px;
+	}
+	
+	.like__count {
+		font-size: 1.1rem;
+	}
+	
+	.visited__count {
+		font-size: 1.1rem;
+	}
+
+}
+@media (max-width: 370px) {
+
+	.contact {
+		font-size: 1.4rem;
+	}
+
+	.like__btn {
+		margin: 7px 0 0 25px;
+		font-size: 1rem;
+	}
+
+	.contact__title::after {
+		font-size: 1rem;
+		top: 77%;
+		left: 37%;
+	}
+	
+	.like__wrapper {
+		padding: 5px 10px;
+	}
+	
+	.like__count {
+		font-size: 1.2rem;
+	}
+	
+	.visited__count {
+		font-size: 1.2rem;
+	}
+	
+	.links__wrapper {
+		padding: 50px 0px;
+		font-size: 1.2rem;
+	}
+
+	.links__wrapper a:not(.mail__mail) {
+		margin: 20px 10px;
+	}
+	
+	.mail a {
+		margin: 20px 10px 20px 10px;
+	}
+
+	.copy__icon {
+		opacity: 1;
+		font-size: .8rem !important;
+		margin-right: -20px;
+	}
 }

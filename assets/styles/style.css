@@ -126,22 +126,22 @@ header, .arrow__wrapper, .arrow__down, .about, .about__container, .avatar__wrapp
 	background: rgb(211, 211, 211); 
 }
 
-@media (min-width: 1725px){
+@media (max-width: 830px) {
+	.download__resume {
+		flex-direction: column;
+	}
+
+	.download__resume > a {
+		margin: 30px 0;
+	}
+}
+
+
+/* @media (min-width: 1725px){
 
 	.welcome__wrapper {
-		font-size: 120px;
+		font-size: 7rem;
 		transform: translateY(120px);
-	}
-
-	.arrow__wrapper {
-		font-size: 30px;
-	}
-
-	.arrow__down {
-		width: 80px;
-		height: 50px;
-		border-radius: 10px;
-		border: 3px solid #fff;
 	}
 
 	.about {
@@ -197,10 +197,6 @@ header, .arrow__wrapper, .arrow__down, .about, .about__container, .avatar__wrapp
 	.skill__card:hover {
 		transform: translateY(-10px);
 		box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
-	}
-
-	progress {
-		width: 300px;
 	}
 
 	.contact {
@@ -263,16 +259,6 @@ header, .arrow__wrapper, .arrow__down, .about, .about__container, .avatar__wrapp
 
 @media (max-width: 920px) {
 
-	.arrow__wrapper {
-		font-size: 70px;
-	}
-	
-	.arrow__down {
-		width: 100px;
-		height: 70px;
-		border: 3px solid #fff;
-	}
-
 	.portfolio__card {
 		width: 330px;
 	}
@@ -322,4 +308,4 @@ header, .arrow__wrapper, .arrow__down, .about, .about__container, .avatar__wrapp
 		font-size: 3rem;
 	}
 
-}
+} */
