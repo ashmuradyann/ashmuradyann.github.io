@@ -38,6 +38,16 @@
 	text-shadow: none;
 }
 
+.skill__card > h4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.skill__card > h4 > * {
+	margin: 0 10px;
+}
+
 .skill__card:hover {
 	transform: translateY(-10px);
 	box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
@@ -65,17 +75,22 @@
 
 .js:hover {
 	color: #000;
-	background-color: #f0d81e;
+	background-color: #f7df1d;
 }
 
 .react:hover {
-	color: #61d2f2;
+	color: #80ddea;
 	background-color: #2a2b2d;
 }
 
 .redux:hover {
 	color: #7248b6;
 	background-color: #f7f7f7;
+}
+
+.firebase:hover {
+	color: #6b6b6b;
+	background-color: #fff;
 }
 
 .html:hover {
@@ -89,7 +104,12 @@
 }
 
 .scss:hover {
-	color: #c76493;
+	color: #eb749c;
+	background-color: #f7f7f7;
+}
+
+.mui:hover {
+	color: #017efe;
 	background-color: #f7f7f7;
 }
 
@@ -109,7 +129,7 @@
 
 .npm:hover {
 	color: #fff;
-	background-color: #c63635;
+	background-color: #c30807;
 }
 
 .pnpm:hover {
@@ -123,8 +143,8 @@
 }
 
 .api:hover {
-	color: #fff;
-	background-color: #151515;
+	color: #009cd5;
+	background-color: #fff;
 }
 
 .json:hover {
