@@ -71,12 +71,12 @@
 	text-shadow: none;
 }
 
-.portfolio__card:nth-child(2)::after {
+.portfolio__card.portfolio-redux::after {
 	background-color: #f7f7f7;
 	color: #7248b6;
 }
 
-.portfolio__card:last-child::after {
+.portfolio__card.portfolio-js::after {
 	background-color: #f0d81e;
 	color: #000;
 }
