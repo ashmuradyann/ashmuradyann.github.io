@@ -36,6 +36,7 @@
 	transition: .5s;
 	margin: 20px 10px;
 	text-shadow: none;
+	cursor: default;
 }
 
 .skill__card > h4 {
@@ -49,7 +50,7 @@
 }
 
 .skill__card:hover {
-	transform: translateY(-10px);
+	transform: translateY(-10px) scale(1.1);
 	box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
