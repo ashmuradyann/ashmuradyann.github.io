@@ -8,7 +8,7 @@
 @font-face {
 	font-family: "Lobster";
 	font-style: normal;
-    font-weight: normal;
+	font-weight: normal;
 	src: url("../fonts/Lobster.woff");
 }
 
@@ -34,8 +34,8 @@ html {
 
 body {
 	background: #246756;
-	text-shadow: 2px 2px 8px rgba(0,0,0,0.31);
-	/* position: relative; */
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.31);
+	overflow: overlay;
 }
 
 .download__resume {
@@ -53,7 +53,7 @@ body {
 	pointer-events: none;
 }
 
-.download__resume > a {
+.download__resume>a {
 	padding: 15px 40px;
 	border: 2px solid #fff;
 	background-color: none;
@@ -64,7 +64,7 @@ body {
 	border-radius: 10px;
 }
 
-.download__resume > a:hover {	
+.download__resume>a:hover {
 	mix-blend-mode: difference;
 	color: #246756;
 	background-color: #fff;
@@ -77,7 +77,7 @@ body {
 	border: 2px solid #fff;
 	border-radius: 10px;
 	color: #fff;
-	padding: 10px 20px;
+	padding: 7px 20px;
 	margin: 20px;
 	font-size: 1.8rem;
 	background-color: rgba(0, 0, 0, 0);
@@ -95,13 +95,22 @@ body {
 	box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.3);
 }
 
-header, .arrow__wrapper, .arrow__down, .about, .about__container, .avatar__wrapper, .links__wrapper > div {
+header,
+.arrow__wrapper,
+.arrow__down,
+.about,
+.about__container,
+.avatar__wrapper,
+.links__wrapper>div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.portfolio__container, .skills__container, .like__container, .contact__container {
+.portfolio__container,
+.skills__container,
+.like__container,
+.contact__container {
 	width: 80%;
 	margin: auto;
 }
@@ -111,19 +120,16 @@ header, .arrow__wrapper, .arrow__down, .about, .about__container, .avatar__wrapp
 	border-radius: 5px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-	display: none;
-}
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #fff; 
+	border-radius: 10px;
+	margin: 0 5px;
+	background: #fff;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: rgb(211, 211, 211); 
+	background: rgb(211, 211, 211);
 }
 
 @media (max-width: 830px) {
@@ -131,7 +137,7 @@ header, .arrow__wrapper, .arrow__down, .about, .about__container, .avatar__wrapp
 		flex-direction: column;
 	}
 
-	.download__resume > a {
+	.download__resume>a {
 		margin: 30px 0;
 	}
 }

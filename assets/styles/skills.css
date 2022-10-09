@@ -1,3 +1,7 @@
+.skills__wrapper {
+	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+}
+
 .skills {
 	width: 100%;
 	color: #fff;
@@ -8,7 +12,7 @@
 	box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.3);
 }
 
-.skills__wrapper {
+.skillcard__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -37,41 +41,23 @@
 	margin: 20px 10px;
 	text-shadow: none;
 	cursor: default;
+	-webkit-box-shadow: inset 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
 }
 
-.skill__card > h4 {
+.skill__card>h4 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.skill__card > h4 > * {
+.skill__card>h4>* {
 	margin: 0 10px;
 }
 
 .skill__card:hover {
 	transform: translateY(-10px) scale(1.1);
-	box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
-}
-
-.stylingLibs {
-	position: relative;
-	z-index: 1;
-}
-
-.stylingLibs::after {
-	position: absolute;
-	top: 110%;
-	left: -4%;
-	content: "Material UI, ANTD";
-	width: 100%;
-	border-radius: 10px;
-	padding: 10px;
-	height: fit-content;
-	background-color: #246756;
-	pointer-events: none;
-	opacity: 0;
-	transition: .5s;
 }
 
 .js:hover {
@@ -151,21 +137,4 @@
 .json:hover {
 	color: #fff;
 	background-color: #151515;
-}
-
-progress {
-	width: 200px;
-	border: 2px solid #308a73;
-	border-radius: 7px;
-	height: 22px;
-}
-
-progress::-webkit-progress-bar {
-	background-color: #308a73;
-	border-radius: 7px;
-}
-
-progress::-webkit-progress-value {
-	background-color: #246756;
-	border-radius: 7px;
 }
