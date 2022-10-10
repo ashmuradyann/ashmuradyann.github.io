@@ -39,6 +39,28 @@
 	overflow: hidden;
 }
 
+.portfolio__card > div {
+	display: flex;
+	align-items: center;
+}
+
+.portfolio__card > div > span {
+	width: 12px;
+	height: 12px;
+	border-radius: 15px;
+	margin: 0 10px;
+}
+
+.portfolio__card > div > span.finished {
+	border: 1px solid #2a9622;
+	background-color: #4dcf44;
+}
+
+.portfolio__card > div > span.developing {
+	border: 1px solid #caad2c;
+	background-color: #e6c92b;
+}
+
 .portfolio__card::after {
 	content: attr(data-skill);
 	position: absolute;
