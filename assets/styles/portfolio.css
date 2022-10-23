@@ -130,3 +130,9 @@
 .portfolio__card > a:hover {
 	transform: translateY(-10px);
 }
+
+@media (max-width: 440px) {
+	.portfolio__card::after {
+		display: none;
+	}
+}

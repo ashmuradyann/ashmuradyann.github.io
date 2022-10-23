@@ -5,10 +5,10 @@
 .skills {
 	width: 100%;
 	color: #fff;
-	padding: 150px 0;
+	padding: 100px 0;
 	font-size: 2rem;
 	background-color: #308a73;
-	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+	clip-path: polygon(0 50px, 100% 0, 100% 100%, 0 calc(100% - 50px));
 	box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -46,6 +46,10 @@
 	box-shadow: inset 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
 }
 
+.redux-saga > h4 > img {
+	width: 50px;
+}
+
 .skill__card>h4 {
 	display: flex;
 	justify-content: center;
@@ -72,6 +76,11 @@
 
 .redux:hover {
 	color: #7248b6;
+	background-color: #f7f7f7;
+}
+
+.redux-saga:hover {
+	color: #86d46b;
 	background-color: #f7f7f7;
 }
 

@@ -11,6 +11,7 @@
 }
 
 .like__wrapper {
+	margin-top: 20px;
 	padding: 40px 100px 20px 100px;
 	display: flex;
 	justify-content: flex-start;
