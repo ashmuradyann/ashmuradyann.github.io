@@ -7,11 +7,11 @@
 
 .portfolio__title {
 	width: fit-content;
-	/* position: relative; */
+	position: relative;
 }
 
 .portfolio__title::after {
-	content: 'made with love';
+	content: 'see other projects in my github';
 	font-size: 1.2rem;
 	position: absolute;
 	top: 75%;

@@ -85,6 +85,11 @@
 	display: block;
 }
 
+.type:hover {
+	color: #fff;
+	background-color: #1976d2;
+}
+
 .react:hover {
 	color: #80ddea;
 	background-color: #2a2b2d;
