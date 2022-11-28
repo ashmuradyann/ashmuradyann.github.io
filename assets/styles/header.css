@@ -35,9 +35,17 @@ header {
 	transition: 0.5s all;
 }
 
-.arrow__down:hover{
-	background-color: #308a73;
+.fa-solid {
+	color: #fff;
+}
+
+.arrow__down:hover {
+	background-color: #fff;
 	transform: translateY(-10px);
+}
+
+.arrow__down:hover .fa-solid {
+	color: #246756;
 }
 
 @media (min-width: 1800px) {

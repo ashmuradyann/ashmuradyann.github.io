@@ -19,7 +19,8 @@ var typed = new Typed('#welcome', {
 		"Hi !",
 		"Hi^1000, I am Ashot Muradyan^1500",
 		"I am a React JS Developer^1500",
-		"So..^500 Let's Dive In !"],
+		"So..^500 Let's Dive In !"
+	],
 	typeSpeed: 50,
 	backSpeed: 35,
 	startDelay: 500,
