@@ -25,7 +25,7 @@
 }
 
 .skills__title::after {
-	content: "hover them";
+	content: "others in process";
 	font-size: 1.2rem;
 	position: absolute;
 	top: 80%;
