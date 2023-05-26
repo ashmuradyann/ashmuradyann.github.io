@@ -69,8 +69,6 @@
 	top: 8%;
 	left: 76%;
 	font-size: 1rem;
-	background-color: #2a2b2d;
-	color: #61d2f2;
 	transform: rotate(40deg);
 	padding: 2px 0;
 	display: flex;
@@ -94,14 +92,29 @@
 	text-shadow: none;
 }
 
+.portfolio__card.portfolio-react::after {
+	background-color: #2a2b2d;
+	color: #61d2f2;
+}
+
 .portfolio__card.portfolio-redux::after {
 	background-color: #f7f7f7;
 	color: #7248b6;
 }
 
+.portfolio__card.portfolio-gsap::after {
+	background-color: #fff;
+	color: #8ac640;
+}
+
 .portfolio__card.portfolio-js::after {
 	background-color: #f0d81e;
 	color: #000;
+}
+
+.portfolio__card.portfolio-html::after {
+	background-color: #e54d26;
+	color: #fff;
 }
 
 .portfolio__card:hover {
