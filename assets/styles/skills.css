@@ -72,6 +72,11 @@
 	display: none;
 }
 
+.gsap h4 img {
+	width: 40px;
+	margin-left: 0;
+}
+
 .js:hover {
 	color: #000;
 	background-color: #f7df1d;
@@ -123,6 +128,11 @@
 .scss:hover {
 	color: #eb749c;
 	background-color: #f7f7f7;
+}
+
+.gsap:hover {
+	color: #8ac640;
+	background-color: #fff;
 }
 
 .mui:hover {
