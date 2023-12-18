@@ -1,180 +1,187 @@
 .skills__wrapper {
-	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
 }
 
 .skills {
-	width: 100%;
-	color: #fff;
-	padding: 100px 0;
-	font-size: 2rem;
-	background-color: #308a73;
-	clip-path: polygon(0 50px, 100% 0, 100% 100%, 0 calc(100% - 50px));
-	box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  color: #fff;
+  padding: 100px 0;
+  font-size: 2rem;
+  background-color: #308a73;
+  clip-path: polygon(0 50px, 100% 0, 100% 100%, 0 calc(100% - 50px));
+  box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.3);
 }
 
 .skillcard__wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 30px auto;
 }
 
 .skills__title {
-	width: fit-content;
-	position: relative;
+  width: fit-content;
+  position: relative;
 }
 
 .skills__title::after {
-	content: "others in process";
-	font-size: 1.2rem;
-	position: absolute;
-	top: 80%;
-	left: 40%;
+  content: "others in process";
+  font-size: 1.2rem;
+  position: absolute;
+  top: 80%;
+  left: 40%;
 }
 
 .skill__card {
-	background-color: #246756;
-	border-radius: 10px;
-	box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.1);
-	padding: 20px;
-	transition: .5s;
-	margin: 20px 10px;
-	text-shadow: none;
-	cursor: default;
-	-webkit-box-shadow: inset 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: inset 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
-	box-shadow: inset 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
+  background-color: #246756;
+  border-radius: 10px;
+  box-shadow: 7px 7px 25px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: 0.5s;
+  margin: 20px 10px;
+  text-shadow: none;
+  cursor: default;
+  -webkit-box-shadow: inset 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
 }
 
 .redux-saga > h4 > img {
-	width: 50px;
+  width: 50px;
 }
 
-.skill__card>h4 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.skill__card > h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.skill__card>h4>* {
-	margin: 0 10px;
+.skill__card > h4 > * {
+  margin-right: 10px;
 }
 
 .skill__card:hover {
-	transform: translateY(-10px) scale(1.1);
+  transform: translateY(-10px) scale(1.1);
 }
 
 .js-normal {
-	display: block;
+  display: block;
 }
 
 .js-hover {
-	display: none;
+  display: none;
 }
 
 .gsap h4 img {
-	width: 40px;
-	margin-left: 0;
+  width: 40px;
+  margin-left: 0;
 }
 
 .js:hover {
-	color: #000;
-	background-color: #f7df1d;
+  color: #000;
+  background-color: #f7df1d;
 }
 
-.js:hover .js-normal {
-	display: none;
+.py:hover {
+	color: #fff;
+	background-color: #1f2933;
 }
 
-.js:hover .js-hover {
-	display: block;
+.ccxt:hover {
+	color: #fff;
+	background-color: #000;
 }
 
 .type:hover {
-	color: #fff;
-	background-color: #1976d2;
+  color: #fff;
+  background-color: #1976d2;
 }
 
 .react:hover {
-	color: #80ddea;
-	background-color: #2a2b2d;
+  color: #80ddea;
+  background-color: #2a2b2d;
 }
 
 .redux:hover {
-	color: #7248b6;
-	background-color: #f7f7f7;
+  color: #7248b6;
+  background-color: #f7f7f7;
 }
 
 .redux-saga:hover {
-	color: #86d46b;
-	background-color: #f7f7f7;
+  color: #86d46b;
+  background-color: #f7f7f7;
 }
 
 .firebase:hover {
-	color: #6b6b6b;
+  color: #6b6b6b;
+  background-color: #fff;
+}
+
+.konva:hover {
+	color: #0484cd;
 	background-color: #fff;
 }
 
 .html:hover {
-	color: #fff;
-	background-color: #fe6e00;
+  color: #fff;
+  background-color: #fe6e00;
 }
 
 .css:hover {
-	color: #fff;
-	background-color: #0091d4;
+  color: #fff;
+  background-color: #0091d4;
 }
 
 .scss:hover {
-	color: #eb749c;
-	background-color: #f7f7f7;
+  color: #eb749c;
+  background-color: #f7f7f7;
 }
 
 .gsap:hover {
-	color: #8ac640;
-	background-color: #262626;
+  color: #8ac640;
+  background-color: #262626;
 }
 
 .mui:hover {
-	color: #017efe;
-	background-color: #f7f7f7;
+  color: #017efe;
+  background-color: #f7f7f7;
 }
 
 .styled:hover {
-	color: #f8cb4f;
-	background-color: #a8578b;
+  color: #f8cb4f;
+  background-color: #a8578b;
 }
 
 .stylingLibs:hover {
-	color: #fff;
-	background-color: #0080ff;
+  color: #fff;
+  background-color: #0080ff;
 }
 
 .stylingLibs:hover.stylingLibs::after {
-	opacity: 1;
+  opacity: 1;
 }
 
 .npm:hover {
-	color: #fff;
-	background-color: #c30807;
+  color: #fff;
+  background-color: #c30807;
 }
 
 .pnpm:hover {
-	color: #fff;
-	background-color: #f69220;
+  color: #fff;
+  background-color: #f69220;
 }
 
 .git:hover {
-	color: #e84e32;
-	background-color: #323232;
+  color: #e84e32;
+  background-color: #323232;
 }
 
 .api:hover {
-	color: #009cd5;
-	background-color: #fff;
+  color: #009cd5;
+  background-color: #fff;
 }
 
 .json:hover {
-	color: #fff;
-	background-color: #151515;
+  color: #fff;
+  background-color: #151515;
 }
