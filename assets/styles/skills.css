@@ -82,6 +82,16 @@
   background-color: #f7df1d;
 }
 
+.php:hover {
+  color: #fff;
+  background-color: #777cb4;
+}
+
+.laravel:hover {
+  color: #fff;
+  background-color: #ef3b2c;
+}
+
 .py:hover {
 	color: #fff;
 	background-color: #1f2933;
